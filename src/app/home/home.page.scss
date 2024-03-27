@@ -96,19 +96,43 @@ $roof-color: #8b4513;
   }
 }
 
+.small-button {
+  flex: 1;
+  margin: 0 5px; /* Ajusta el margen entre los botones */
+}
+
+.buttons-below {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 565px; /* Ajusta este valor para colocar los botones debajo de la casa */
+}
+
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%; /* Cambia esto según tus necesidades */
+  margin-top: 100; /* Ajuste para bajar más los botones */
+}
+
+
 .buttons-left,
 .buttons-right {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  align-items: center;
 }
 
-.buttons-left {
-  left: 0;
+.small-button {
+  margin: 5px; /* Espacio entre los botones */
+  min-width: 100px; /* Ancho mínimo para los botones */
 }
 
-.buttons-right {
-  right: 0;
-}
+
+
